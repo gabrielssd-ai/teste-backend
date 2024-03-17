@@ -6,9 +6,13 @@ app.use(express.urlencoded({extended: false}))
 
 const lista1 = require("./routes/lista1")
 const lista2 = require("./routes/lista2")
+const lista3 = require("./routes/lista3")
+
 
 app.use('/lista1', lista1)
 app.use('/lista2', lista2)
+app.use('/lista3', lista3)
+
 
 
 app.get('/hello', function(req, res){
